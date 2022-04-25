@@ -1,9 +1,13 @@
 /* Write a function to do the division operation without using the built-in division*/
 
 function division(number, dividedBy){
-    if (number<dividedBy){return 0;}
-       
-         else{return 1 +division(number-dividedBy,dividedBy); }
+
+  if (dividedBy==0 ){
+    return 0;
+  }else if(number<dividedBy){
+    return 0;
+  } 
+     else{return 1+division(number-dividedBy,dividedBy); }
     }
    
 
